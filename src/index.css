@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AM Media / Allayal utilities */
+.section-padding {
+  @apply py-14 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-16;
+}
+.container-custom {
+  @apply max-w-7xl mx-auto;
+}
+.text-gradient {
+  @apply bg-gradient-to-r from-indigo-400 to-rose-400 bg-clip-text text-transparent;
+}
+.Toastify__toast-container {
+  top: 1rem !important;
+  z-index: 9999 !important;
+}
+
+/* ============================================
+   CSS Custom Properties / Design Tokens
+   ============================================ */
+:root {
+  /* Primary Palette */
+  --color-primary: #6a11cb;
+  --color-primary-dark: #4a0e8f;
+  --color-secondary: #2575fc;
+  --color-accent: #F3CA40;
+  --color-accent-hover: #e5bc32;
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  --gradient-hero: linear-gradient(135deg, #1a0533 0%, #6a11cb 40%, #2575fc 100%);
+  --gradient-cta: linear-gradient(135deg, #4a0e8f 0%, #6a11cb 50%, #2575fc 100%);
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-bg-light: #f8f7ff;
+  --color-bg-lavender: #eee8f7;
+  --color-text-dark: #1a1a2e;
+  --color-text-body: #4a4a68;
+  --color-text-light: #7c7c9a;
+  --color-text-white: #ffffff;
+  --color-text-white-muted: rgba(255, 255, 255, 0.75);
+
+  /* Footer */
+  --color-footer-bg: #0d0d1a;
+  --color-footer-text: #9a9ab0;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(106, 17, 203, 0.08);
+  --shadow-card-hover: 0 12px 40px rgba(106, 17, 203, 0.18);
+  --shadow-btn: 0 4px 16px rgba(243, 202, 64, 0.35);
+  --shadow-btn-hover: 0 6px 24px rgba(243, 202, 64, 0.5);
+  --shadow-nav: 0 2px 24px rgba(0, 0, 0, 0.12);
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3.25rem;
+  --font-size-5xl: 4rem;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-padding: 2rem;
+  --border-radius: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ============================================
+   CSS Reset & Base
+   ============================================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text-dark);
+  background: var(--color-white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section {
+  padding: var(--space-5xl) 0;
+}
+
+.section-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: var(--color-text-dark);
+  text-align: center;
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: var(--font-size-md);
+  color: var(--color-text-light);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-3xl);
+  line-height: 1.8;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: var(--color-accent);
+  color: var(--color-text-dark);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border-radius: var(--border-radius-full);
+  box-shadow: var(--shadow-btn);
+  transition: all var(--transition-base);
+  letter-spacing: 0.01em;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+  box-shadow: var(--shadow-btn-hover);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 768px) {
+  :root {
+    --font-size-4xl: 2.25rem;
+    --font-size-3xl: 1.75rem;
+    --font-size-2xl: 1.5rem;
+    --container-padding: 1.25rem;
+  }
+
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}

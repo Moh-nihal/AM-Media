@@ -1,0 +1,111 @@
+/**
+ * Portfolio items – images and reels for the gallery.
+ */
+export const portfolioItems = [
+  {
+    id: 1,
+    title: 'White Pearl Rent a Car',
+    category: 'Creative Posters',
+    image: '/images/portfolio/whitepearl_post1.jpeg',
+    description: 'Luxury Lamborghini poster with "Safe & Smooth Ride".',
+  },
+  {
+    id: 18,
+    title: 'White Pearl - Luxury Car Rental',
+    category: 'Creative Posters',
+    image: '/images/portfolio/white_pearl_post2.jpeg',
+    description: 'Premium car rental poster for White Pearl.',
+  },
+  {
+    id: 29,
+    title: 'White Pearl - Luxury Reel 2',
+    category: 'Reels & Films',
+    image: '/images/portfolio/whitepearl_post1.jpeg',
+    video: '/images/portfolio/WHITE_PEARL_REEL2.mp4',
+    description: 'Luxury car rental reel for White Pearl.',
+  },
+  {
+    id: 2,
+    title: 'Spring Bubble Tea - Cinematic Reel',
+    category: 'Reels & Films',
+    image: '/images/portfolio/spring_photo.jpg',
+    video: '/images/portfolio/spring_reel1.mp4',
+    description: 'High-energy cinematic reel crafted for social engagement.',
+  },
+  {
+    id: 3,
+    title: 'Spring Bubble Tea - Layers of Bliss Reel',
+    category: 'Reels & Films',
+    image: '/images/portfolio/spring_photo.jpg',
+    video: '/images/portfolio/spring_reel2.mp4',
+    description: 'Cinematic reel showcasing Spring Bubble Tea\'s signature drinks.',
+  },
+  {
+    id: 4,
+    title: 'Spring Bubble Tea - Social Media Creative',
+    category: 'Creative Posters',
+    image: '/images/portfolio/spring_post1.jpeg',
+    description: 'Engaging social media post design for brand visibility.',
+  },
+  {
+    id: 5,
+    title: 'Spring Bubble Tea - Layers of Pure Bliss',
+    category: 'Creative Posters',
+    image: '/images/portfolio/spring_post1.png',
+    description: 'Social media creative for Spring Bubble Tea.',
+  },
+  {
+    id: 6,
+    title: 'Spring Bubble Tea - Brand Photography',
+    category: 'Brand Photography',
+    image: '/images/portfolio/spring_photo.jpg',
+    description: 'Product-focused brand photography for Spring Bubble Tea.',
+  },
+  {
+    id: 7,
+    title: 'AAJ - Promotional Reel',
+    category: 'Reels & Films',
+    image: '/images/portfolio/spring_photo.jpg',
+    video: '/images/portfolio/aaj_reel.mp4',
+    description: 'Promotional reel designed to boost digital reach.',
+  },
+  {
+    id: 9,
+    title: 'Al Bawasel Gym - Fitness Reel',
+    category: 'Reels & Films',
+    image: '/images/portfolio/albawasal_post1.jpeg',
+    video: '/images/portfolio/AL_BAWASEL_GYM_REEL.mp4',
+    description: 'High-impact fitness reel showcasing brand energy.',
+  },
+  {
+    id: 11,
+    title: 'Al Bawasel - Social Media Poster',
+    category: 'Creative Posters',
+    image: '/images/portfolio/albawasel_post2.jpeg',
+    description: 'Clean and bold poster design for social platforms.',
+  },
+  {
+    id: 14,
+    title: 'FARA - Luxury Jewelry Poster',
+    category: 'Creative Posters',
+    image: '/images/portfolio/fara_post2.jpeg',
+    description: 'Elegant jewelry poster designed for premium appeal.',
+  },
+  {
+    id: 19,
+    title: 'Optimum - Brand Promotion Reel',
+    category: 'Reels & Films',
+    image: '/images/portfolio/optimum_coverimg.jpg',
+    video: '/images/portfolio/OPTIMUM_REEL.mp4',
+    description: 'Dynamic brand promotion reel for maximum reach.',
+  },
+  {
+    id: 21,
+    title: 'Zero Max - Hero Brand Poster',
+    category: 'Creative Posters',
+    image: '/images/portfolio/ZERO_MAX_POSTER1.png',
+    description: 'Zero Max brand poster design.',
+  },
+]
+
+export const categories = ['All', 'Reels & Films', 'Creative Posters', 'Brand Photography']
