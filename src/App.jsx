@@ -11,10 +11,16 @@ import Contact from './components/ammedia/Contact'
 import Footer from './components/Footer'
 import AMMediaPage from './pages/AMMediaPage'
 import PortfolioPage from './pages/PortfolioPage'
+import SEO from './components/SEO'
 
 function HomePage() {
   return (
     <>
+      <SEO
+        title="Home"
+        description="Professional web design, branding, and development services by Ajmal Mukhtar."
+        url="https://ajmalmukhtar.com/"
+      />
       <Hero />
       <Features />
       <Services />
@@ -35,11 +41,17 @@ export default function App() {
     window.scrollTo(0, 0)
   }, [pathname])
 
-  // Scroll to section when hash is present (e.g. #contact, #about)
+  // Scroll to section when hash is present
   useEffect(() => {
     if (hash) {
       const id = hash.slice(1)
-      setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 100)
+      const element = document.getElementById(id)
+      if (element) {
+        setTimeout(() => element.scrollIntoView({ behavior: 'smooth' }), 100)
+      }
+    } else {
+      // Force top on load if no hash
+      window.scrollTo(0, 0)
     }
   }, [pathname, hash])
 

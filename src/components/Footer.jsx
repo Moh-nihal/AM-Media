@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import amLogo from '../assets/IMG-20260306-WA0432.svg'
 import './Footer.css'
+
+const amLogo = '/IMG-20260306-WA0432.svg'
 
 export default function Footer() {
     return (

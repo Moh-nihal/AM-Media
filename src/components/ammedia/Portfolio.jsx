@@ -10,7 +10,7 @@ function shuffle(array) {
   const out = [...array]
   for (let i = out.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
-    ;[out[i], out[j]] = [out[j], out[i]]
+      ;[out[i], out[j]] = [out[j], out[i]]
   }
   return out
 }
@@ -31,7 +31,7 @@ const AutoPlayVideo = ({ src }) => {
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
-    inView ? video.play().catch(() => {}) : video.pause()
+    inView ? video.play().catch(() => { }) : video.pause()
   }, [inView])
   return (
     <div ref={containerRef} className="relative w-full aspect-[9/16] bg-stone-900 overflow-hidden">
@@ -54,7 +54,7 @@ const ModalVideo = ({ src, poster }) => {
     if (!video) return
     video.currentTime = 0
     video.muted = true
-    video.play().catch(() => {})
+    video.play().catch(() => { })
   }, [src])
   return <video ref={videoRef} src={safeSrc(src)} poster={safeSrc(poster)} controls loop playsInline className="w-full h-auto max-h-[80vh] rounded-lg" />
 }
@@ -81,7 +81,7 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto">
         <motion.header initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5 }} className="mb-12">
           <p className="text-sm uppercase tracking-widest text-stone-500">Selected work</p>
-          <h2 className="mt-2 text-3xl md:text-4xl font-bold text-stone-900 dark:text-white">Visual stories across reels,<br className="hidden sm:block" />posts & motion</h2>
+          <h1 className="mt-2 text-3xl md:text-4xl font-bold text-stone-900 dark:text-white">Visual stories across reels,<br className="hidden sm:block" />posts & motion</h1>
           <nav className="mt-6 flex flex-wrap gap-3">
             {categories.map((cat) => {
               const active = selectedCategory === cat

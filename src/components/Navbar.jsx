@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import amLogo from '../assets/IMG-20260306-WA0432.svg'
 import './Navbar.css'
+
+const amLogo = '/IMG-20260306-WA0432.svg'
 
 const navLinks = [
   { label: 'Home', href: '#home', type: 'hash' },
@@ -30,7 +31,11 @@ export default function Navbar() {
     e.preventDefault()
     setMenuOpen(false)
     const el = document.querySelector(href)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+      // Clean up the URL hash so refreshes don't stick here
+      window.history.pushState('', document.title, window.location.pathname + window.location.search)
+    }
   }
 
   const isLightNav = location.pathname === '/am-media' || location.pathname === '/portfolio'
