@@ -28,21 +28,23 @@ const AutoPlayVideo = ({ src }) => {
   const containerRef = useRef(null)
   const videoRef = useRef(null)
   const inView = useInView(containerRef, { amount: 0.4 })
+
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
     inView ? video.play().catch(() => { }) : video.pause()
   }, [inView])
+
   return (
     <div ref={containerRef} className="relative w-full aspect-[9/16] bg-stone-900 overflow-hidden">
-      <video ref={videoRef} src={safeSrc(src)} muted loop playsInline preload="auto" className="absolute inset-0 w-full h-full object-cover" />
+      <video ref={videoRef} src={safeSrc(src)} muted loop playsInline preload="metadata" className="absolute inset-0 w-full h-full object-cover" />
     </div>
   )
 }
 
 const ImagePreview = ({ src, alt }) => (
   <div className="relative w-full bg-stone-800 overflow-hidden">
-    <img src={safeSrc(src)} alt={alt} loading="lazy" className="block w-full transition-transform duration-500 group-hover:scale-105" />
+    <img src={safeSrc(src)} alt={alt} loading="lazy" decoding="async" className="block w-full transition-transform duration-500 group-hover:scale-105" />
     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition" />
   </div>
 )
