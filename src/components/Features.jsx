@@ -24,7 +24,7 @@ const features = [
     {
         icon: portfolioIcon,
         title: 'Portfolio',
-        desc: 'AM Garage, Mobile Store, and AM Media.',
+        desc: 'Click to see detailed portfolio.',
         path: '/portfolio',
     },
 ]
