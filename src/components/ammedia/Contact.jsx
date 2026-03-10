@@ -78,8 +78,8 @@ const Contact = () => {
                 <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-400 to-rose-400"><Mail className="w-6 h-6 text-white" /></div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-semibold dark:text-white mb-2">Email</h3>
-                  <p className="text-stone-600 dark:text-slate-400 mb-2">ammediadubai@gmail.com</p>
-                  <a href="mailto:ammediadubai@gmail.com" className="text-indigo-500 hover:text-rose-500 transition-colors">Send Email →</a>
+                  <p className="text-stone-600 dark:text-slate-400 mb-2">info@ajmalmukhtar.com</p>
+                  <a href="mailto:info@ajmalmukhtar.com" className="text-indigo-500 hover:text-rose-500 transition-colors">Send Email →</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">

@@ -168,7 +168,7 @@ const Hero = () => {
           </motion.a>
 
           <motion.a
-            href="mailto:ammediadubai@gmail.com"
+            href="mailto:info@ajmalmukhtar.com"
             className="inline-flex px-6 py-3.5 sm:px-7 sm:py-3.5 rounded-full text-base font-semibold bg-white/80 dark:bg-white/5 backdrop-blur-sm border-2 border-rose-400/60 dark:border-rose-400/50 text-rose-600 dark:text-rose-300 hover:bg-rose-500/15 dark:hover:bg-rose-400/15 hover:border-rose-400 transition-all duration-300 touch-manipulation"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
