@@ -7,13 +7,16 @@ export default function About() {
             <div className="container">
                 <div className="about-content">
                     <h2 className="about-title">
-                        We help teams build the business of their dreams
+                        Ajmal Mukhtar <span className="about-subtitle">— Entrepreneur & Founder</span>
                     </h2>
                     <p className="about-text">
-                        From digital marketing and branding to automotive care and retail, we bring innovation, quality, and dedication to every venture. Our portfolio spans AM Media, AM Garage, and Mobile Store—each built to deliver real results and lasting trust.
+                        Ajmal Mukhtar is an entrepreneur dedicated to delivering quality services across multiple industries. Through his ventures — AM Garage, AM Media, and a Mobile Store — he focuses on providing reliable automotive care, creative media solutions, and the latest mobile technology.
                     </p>
                     <p className="about-text">
-                        We combine strategy, creativity, and hands-on execution so your brand stands out and your customers keep coming back. Whether you need a stronger online presence, reliable service, or a seamless shopping experience, we’re here to make it happen.
+                        AM Garage stands at the heart of his work, offering professional vehicle repair, maintenance, and automotive solutions with a strong emphasis on quality workmanship, transparency, and customer trust.
+                    </p>
+                    <p className="about-text">
+                        With a commitment to professionalism and customer satisfaction, his goal is to build dependable services that people can rely on.
                     </p>
                 </div>
                 <div className="about-image">

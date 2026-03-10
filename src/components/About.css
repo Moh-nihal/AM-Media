@@ -35,6 +35,14 @@
     letter-spacing: -0.02em;
 }
 
+.about-subtitle {
+    display: block;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    color: var(--color-text-light);
+    margin-top: var(--space-xs);
+}
+
 .about-text {
     font-size: var(--font-size-base);
     color: var(--color-text-body);

@@ -5,7 +5,6 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import Services from './components/Services'
 import About from './components/About'
-import Reviews from './components/Reviews'
 import WhyUs from './components/WhyUs'
 import Contact from './components/ammedia/Contact'
 import Footer from './components/Footer'
@@ -25,7 +24,6 @@ function HomePage() {
       <Features />
       <Services />
       <About />
-      <Reviews />
       <WhyUs />
       <Contact />
       <Footer />

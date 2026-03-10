@@ -6,13 +6,17 @@ export default function Hero() {
         <section className="hero" id="home">
             <div className="container">
                 <div className="hero-content">
-                    <h1 className="hero-title animate-fade-in-up">Premium Services, One Trusted Name.</h1>
+                    <h1 className="hero-title animate-fade-in-up">
+                        Excellence in <br />
+                        <div style={{ display: 'inline-block' }}>
+                            Every Service <br />
+                            <span className="hero-title-highlight">- Ajmal Mukhtar</span>
+                        </div>
+                    </h1>
                     <p className="hero-subtitle">
-                        Experience the AM standard. We bring innovation, quality, and dedication to automotive care, digital media, and mobile retail.
+                        Experience the AM standard. We bring innovation, quality, and dedication to automotive care, media, and mobile retail.
                     </p>
-                    {/* <a href="#contact" className="btn-primary">
-                        Make a Website
-                    </a> */}
+
                 </div>
                 <div className="hero-image">
                     <img src={heroImg} alt="Web design collaboration illustration" />

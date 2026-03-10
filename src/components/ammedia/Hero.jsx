@@ -142,7 +142,7 @@ const Hero = () => {
           variants={itemVariants}
         >
           <motion.a
-            href="https://wa.me/971545994816"
+            href="https://wa.me/971524090337"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex px-6 py-3.5 sm:px-7 sm:py-3.5 bg-gradient-to-r from-indigo-500 to-rose-500 text-white text-base font-semibold rounded-full shadow-[0_4px_20px_rgba(129,140,248,0.35)] hover:shadow-[0_6px_28px_rgba(129,140,248,0.45)] transition-shadow duration-300 touch-manipulation"
@@ -156,7 +156,7 @@ const Hero = () => {
           </motion.a>
 
           <motion.a
-            href="tel:+971545994816"
+            href="tel:+971524090337"
             className="inline-flex px-6 py-3.5 sm:px-7 sm:py-3.5 rounded-full text-base font-semibold bg-white/80 dark:bg-white/5 backdrop-blur-sm border-2 border-indigo-400/60 dark:border-indigo-400/50 text-indigo-600 dark:text-indigo-300 hover:bg-indigo-500/15 dark:hover:bg-indigo-400/15 hover:border-indigo-400 transition-all duration-300 touch-manipulation"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
@@ -168,7 +168,7 @@ const Hero = () => {
           </motion.a>
 
           <motion.a
-            href="mailto:info@allayal.com"
+            href="mailto:ammediadubai@gmail.com"
             className="inline-flex px-6 py-3.5 sm:px-7 sm:py-3.5 rounded-full text-base font-semibold bg-white/80 dark:bg-white/5 backdrop-blur-sm border-2 border-rose-400/60 dark:border-rose-400/50 text-rose-600 dark:text-rose-300 hover:bg-rose-500/15 dark:hover:bg-rose-400/15 hover:border-rose-400 transition-all duration-300 touch-manipulation"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}

@@ -4,14 +4,16 @@ import './Navbar.css'
 
 const amLogo = '/IMG-20260306-WA0432.svg'
 
+import businessLicense from '../assets/Business_License_-_NB_177305049224.pdf'
+
 const navLinks = [
   { label: 'Home', href: '#home', type: 'hash' },
-  { label: 'Services', href: '#services', type: 'hash' },
+  { label: 'Businesses', href: '#services', type: 'hash' },
   { label: 'About', href: '#about', type: 'hash' },
   { label: 'AM Media', path: '/am-media', type: 'route' },
   { label: 'Portfolio', path: '/portfolio', type: 'route' },
-  { label: 'Reviews', href: '#reviews', type: 'hash' },
   { label: 'Why Us', href: '#whyus', type: 'hash' },
+  { label: 'License', type: 'pdf', file: businessLicense },
   { label: 'Contact', href: '#contact', type: 'hash' },
 ]
 
@@ -49,16 +51,32 @@ export default function Navbar() {
         </Link>
 
         <div className={`navbar-links${menuOpen ? ' open' : ''}`}>
-          {navLinks.map((link) =>
-            link.type === 'route' ? (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ) : (
+          {navLinks.map((link) => {
+            if (link.type === 'route') {
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )
+            }
+            if (link.type === 'pdf') {
+              return (
+                <a
+                  key={link.label}
+                  href={link.file}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
+            }
+            return (
               <a
                 key={link.href}
                 href={link.href}
@@ -75,11 +93,11 @@ export default function Navbar() {
                 {link.label}
               </a>
             )
-          )}
+          })}
         </div>
 
         <div className="navbar-social">
-          <a href="#" aria-label="Instagram">
+          <a href="https://www.instagram.com/amgarage?igsh=MXM3OWM5azlhaDFneg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
           </a>
           <a href="#" aria-label="Facebook">

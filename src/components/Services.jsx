@@ -1,6 +1,6 @@
 import amuraImg from '../assets/Best Digital Growth Marketing Company in India _ Amura.jpeg'
 import garageImg from '../assets/dream JDM garage _.jpeg'
-import mobileStoreImg from '../assets/Bewertungen zu Elektronik-Shops lesen.jpeg'
+import mobileStoreImg from '../assets/mobilestore.jpeg'
 import './Services.css'
 
 const services = [

@@ -35,7 +35,7 @@ const Contact = () => {
     const message = encodeURIComponent(
       `Hello! I'm interested in your services.${formData.name ? `\n\nName: ${formData.name}` : ''}${formData.email ? `\nEmail: ${formData.email}` : ''}${formData.phone ? `\nPhone: ${formData.phone}` : ''}${formData.message ? `\nMessage: ${formData.message}` : ''}`
     )
-    window.open(`https://wa.me/971545994816?text=${message}`, '_blank')
+    window.open(`https://wa.me/971524090337?text=${message}`, '_blank')
   }
 
   return (
@@ -62,7 +62,7 @@ const Contact = () => {
                 <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-400 to-rose-400"><MessageCircle className="w-6 h-6 text-white" /></div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-semibold dark:text-white mb-2">WhatsApp</h3>
-                  <p className="text-stone-600 dark:text-slate-400 mb-2">+971 54 599 4816</p>
+                  <p className="text-stone-600 dark:text-slate-400 mb-2">+971 52 409 0337</p>
                   <button onClick={handleWhatsApp} disabled={isSubmitting} className="text-indigo-500 hover:text-rose-500 transition-colors disabled:opacity-50">Send Message →</button>
                 </div>
               </div>
@@ -70,23 +70,23 @@ const Contact = () => {
                 <div className="p-3 rounded-lg bg-gradient-to-br from-rose-400 to-indigo-400"><Phone className="w-6 h-6 text-white" /></div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-semibold dark:text-white mb-2">Phone</h3>
-                  <p className="text-stone-600 dark:text-slate-400 mb-2">+971 54 599 4816</p>
-                  <a href="tel:+971545994816" className="text-rose-500 hover:text-indigo-500 transition-colors">Call Now →</a>
+                  <p className="text-stone-600 dark:text-slate-400 mb-2">+971 52 409 0337</p>
+                  <a href="tel:+971524090337" className="text-rose-500 hover:text-indigo-500 transition-colors">Call Now →</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-400 to-rose-400"><Mail className="w-6 h-6 text-white" /></div>
                 <div>
                   <h3 className="text-lg sm:text-xl font-semibold dark:text-white mb-2">Email</h3>
-                  <p className="text-stone-600 dark:text-slate-400 mb-2">info@allayal.com</p>
-                  <a href="mailto:info@allayal.com" className="text-indigo-500 hover:text-rose-500 transition-colors">Send Email →</a>
+                  <p className="text-stone-600 dark:text-slate-400 mb-2">ammediadubai@gmail.com</p>
+                  <a href="mailto:ammediadubai@gmail.com" className="text-indigo-500 hover:text-rose-500 transition-colors">Send Email →</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-lg bg-gradient-to-br from-rose-400 to-indigo-400"><MapPin className="w-6 h-6 text-white" /></div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-lg sm:text-xl font-semibold dark:text-white mb-2">Location</h3>
-                  <a href="https://www.google.com/maps/search/Amber+Gem+Tower+Ajman+UAE" target="_blank" rel="noopener noreferrer" className="text-rose-500 hover:text-indigo-500 transition-colors inline-flex items-center gap-1">Get Directions →</a>
+                  <a href="https://share.google/13bPnJSwscuix90np" target="_blank" rel="noopener noreferrer" className="text-rose-500 hover:text-indigo-500 transition-colors inline-flex items-center gap-1">Get Directions →</a>
                 </div>
               </div>
             </div>

@@ -115,7 +115,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <span className="text-indigo-500 dark:text-indigo-400 text-sm font-semibold uppercase tracking-wider">
-              About ALLAYAL
+              About AM Media
             </span>
 
             <motion.h2 className="text-[2rem] leading-tight sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold">
@@ -129,7 +129,7 @@ const About = () => {
             <div className="space-y-4 text-base sm:text-lg text-stone-700 dark:text-slate-300">
               <p>
                 <span className="text-stone-900 dark:text-white font-semibold">
-                  ALLAYAL MEDIA AND GRAPHICS FZE LLC
+                  AM Media
                 </span>{" "}
                 is a creative powerhouse based in the UAE, serving clients across the GCC and India.
               </p>

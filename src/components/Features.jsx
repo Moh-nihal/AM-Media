@@ -14,7 +14,7 @@ const features = [
     {
         icon: shoppingIcon,
         title: 'Online Store',
-        desc: 'General Trading and Cosmetics.',
+        desc: 'General Trading and E-commerce.',
     },
     {
         icon: blogIcon,
