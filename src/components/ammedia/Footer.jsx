@@ -16,12 +16,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-8 md:mb-12">
           <div>
             <h3 className="text-xl sm:text-2xl font-display font-bold mb-4 bg-gradient-to-r from-indigo-500 to-rose-500 dark:from-indigo-400 dark:to-rose-400 bg-clip-text text-transparent">AM Media</h3>
-            <p className="text-sm sm:text-base text-stone-600 dark:text-slate-400 mb-6 leading-relaxed">From India to the heart of the GCC, AM Media and Graphics connects creativity with culture — delivering premium-quality design, media, and digital solutions across Saudi Arabia, Kuwait, Oman, Qatar, Bahrain, and UAE.</p>
+            <p className="text-sm sm:text-base text-stone-600 dark:text-slate-400 mb-6 leading-relaxed">From Indo-Pak to the heart of the GCC Dubai UAE, AM Media and Graphics connects creativity with culture — delivering premium-quality design, media, and digital solutions across Saudi Arabia, Qatar, Oman, Kuwait and Bahrain.</p>
             <div className="flex gap-4 relative z-50 pointer-events-auto">
               {[
                 { Icon: Instagram, link: 'https://www.instagram.com/amgarage?igsh=MXM3OWM5azlhaDFneg==', label: 'Instagram' },
-                { Icon: Facebook, link: 'https://www.facebook.com/profile.php?id=61583026393077', label: 'Facebook' },
-                { Icon: Linkedin, link: 'https://www.linkedin.com/in/al-layal-2216b0395/?originalSubdomain=ae', label: 'LinkedIn' },
+                { Icon: Facebook, link: 'https://www.facebook.com/share/1GofVbhr3m/', label: 'Facebook' },
+                { Icon: Linkedin, link: '#', label: 'LinkedIn' },
               ].map(({ Icon, link, label }, i) => (
                 <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="relative z-50 p-3 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg bg-white/80 dark:bg-[#0A0807]/80 border border-stone-200 dark:border-indigo-400/20 hover:bg-indigo-50 dark:hover:bg-indigo-400/20 hover:border-indigo-300 dark:hover:border-indigo-400/40 transition-all duration-300 group pointer-events-auto touch-manipulation" aria-label={label}>
                   <Icon className="w-5 h-5 text-stone-500 dark:text-slate-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-400" />

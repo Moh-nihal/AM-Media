@@ -16,7 +16,7 @@ const services = [
     },
     {
         image: mobileStoreImg,
-        title: 'Mobile Store',
+        title: 'AM Mobile',
         desc: 'Your premium destination for the latest smartphones and accessories, backed by expert repair services and support.',
     },
 ]

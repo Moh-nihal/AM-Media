@@ -9,7 +9,7 @@ const features = [
     {
         icon: buildingIcon,
         title: 'Local Business',
-        desc: 'AM Garage, Mobile Store, and AM Media.',
+        desc: 'AM Garage, AMMobile, and AM Media.',
     },
     {
         icon: shoppingIcon,
